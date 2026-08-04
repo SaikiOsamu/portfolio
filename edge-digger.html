@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edge Digger | Arthur Tang · 游戏设计师</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Tang</a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <div class="dropdown">
+        <button>游戏作品 ▾</button>
+        <div class="dropdown-menu">
+          <a href="drag-and-mix.html">Drag And Mix <span>· 解谜合成</span></a>
+          <a href="edge-digger.html">Edge Digger <span>· 平台动作</span></a>
+          <a href="mouse-gang.html">Mouse Gang <span>· 卡牌桌游</span></a>
+          <a href="time-casino.html">Time Casino <span>· 肉鸽迷宫</span></a>
+          <a href="pip-follicles.html">Pip Follicles <span>· 街机理发</span></a>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-ghost" href="https://www.arthurtang.online/_files/ugd/ac5c19_97dff723fe3e4dc8b64bd0f16d40d59c.pdf" target="_blank">简历</a>
+  </div>
+</nav>
+
+<div class="wrap page-hero">
+  <span class="eyebrow">动作 · Game Jam 作品</span>
+  <h1 class="display"><span class="grad">Edge Digger</span></h1>
+  <p class="lead" style="margin:18px auto 0">一款 Game Jam 参赛动作游戏。</p>
+  <div class="hero-cta" style="justify-content:center">
+    <a class="btn btn-primary" href="https://saikiosamu.itch.io/edge-digger" target="_blank">在 itch.io 上试玩</a>
+  </div>
+  <p style="color:var(--text-dim);font-size:.85rem;margin-top:12px">支持 Windows(下载版)</p>
+  <div class="cover">
+    <img src="https://static.wixstatic.com/media/ac5c19_3797673ee50342ffba297b8167b7fd66~mv2.png/v1/fill/w_1400,h_787,al_c,q_90,enc_avif,quality_auto/ac5c19_3797673ee50342ffba297b8167b7fd66~mv2.png" alt="Edge Digger 主视觉">
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="meta-panel reveal">
+    <div class="cell"><div class="label">游戏形式</div><div class="value">电子游戏</div></div>
+    <div class="cell"><div class="label">担任角色</div><div class="value"><li>制作人</li><li>游戏设计师</li><li>程序</li><li>音频工程师</li><li>项目管理</li></div></div>
+    <div class="cell"><div class="label">主要贡献</div><div class="value"><li>玩法设计</li><li>算法设计</li><li>核心玩法机制</li><li>后处理特效与粒子系统</li><li>资源整合 / 调试</li><li>组队与协调</li></div></div>
+    <div class="cell"><div class="label">团队规模</div><div class="value" style="font-size:2rem;font-weight:800">3 <span style="font-size:.9rem;color:var(--text-dim)">人</span></div></div>
+  </div>
+</div>
+
+<section class="wrap" style="text-align:center">
+  <span class="eyebrow">Achievement</span>
+  <h2 class="section-title">评选成绩:<span class="grad">前 10%</span></h2>
+  <p class="lead" style="margin:0 auto 30px">该作品在 Game Jam 评选中位列所有参赛作品的前 10%。</p>
+  <div class="figure reveal" style="max-width:760px;margin:0 auto">
+    <img src="https://static.wixstatic.com/media/ac5c19_6e30536068484a93aa4b536aefbf5ef9~mv2.png/v1/fill/w_1062,h_618,al_c,q_85,enc_avif,quality_auto/ac5c19_6e30536068484a93aa4b536aefbf5ef9~mv2.png" alt="Game Jam 评选成绩">
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <h2>联系<span class="grad-text">与合作</span></h2>
+    <p>如有游戏设计相关的合作或交流意向,欢迎通过邮件联系。</p>
+    <div class="footer-cta">
+      <a class="btn btn-primary" href="mailto:arthurta@andrew.cmu.edu">联系我</a>
+      <a class="btn btn-ghost" href="https://www.arthurtang.online/_files/ugd/ac5c19_97dff723fe3e4dc8b64bd0f16d40d59c.pdf" target="_blank">下载简历</a>
+    </div>
+    <p class="copyright">© 2026 Arthur Tang · 汉化复刻版</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

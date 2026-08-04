@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mouse Gang | Arthur Tang · 游戏设计师</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.card-gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin:26px 0}
+@media(max-width:900px){.card-gallery{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:600px){.card-gallery{grid-template-columns:repeat(3,1fr)}}
+.card-gallery img{aspect-ratio:3/4;object-fit:cover;border:1px solid var(--card-border);transition:.25s;cursor:zoom-in}
+.card-gallery img:hover{transform:translateY(-6px) scale(1.05);border-color:var(--pink);box-shadow:0 12px 28px rgba(60,45,20,.2)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Tang</a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <div class="dropdown">
+        <button>游戏作品 ▾</button>
+        <div class="dropdown-menu">
+          <a href="drag-and-mix.html">Drag And Mix <span>· 解谜合成</span></a>
+          <a href="edge-digger.html">Edge Digger <span>· 平台动作</span></a>
+          <a href="mouse-gang.html">Mouse Gang <span>· 卡牌桌游</span></a>
+          <a href="time-casino.html">Time Casino <span>· 肉鸽迷宫</span></a>
+          <a href="pip-follicles.html">Pip Follicles <span>· 街机理发</span></a>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-ghost" href="https://www.arthurtang.online/_files/ugd/ac5c19_97dff723fe3e4dc8b64bd0f16d40d59c.pdf" target="_blank">简历</a>
+  </div>
+</nav>
+
+<div class="wrap page-hero">
+  <span class="eyebrow">桌面卡牌 · 欢乐派对</span>
+  <h1 class="display"><span class="grad">Mouse Gang</span></h1>
+  <p class="lead" style="margin:18px auto 0">一场快节奏的社交扑克脸对决——3–5 名玩家,10–20 分钟一局!</p>
+  <div class="cover" style="max-width:560px">
+    <img src="https://static.wixstatic.com/media/ac5c19_ddb5127bbf604be28c28945c89bbb7d2~mv2.png/v1/fill/w_984,h_552,al_c,q_85,enc_avif,quality_auto/mouse_gang_logo.png" alt="Mouse Gang Logo">
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="meta-panel reveal">
+    <div class="cell"><div class="label">游戏形式</div><div class="value">桌面卡牌游戏</div></div>
+    <div class="cell"><div class="label">担任角色</div><div class="value"><li>创意负责人</li><li>游戏设计师</li><li>UI 设计师</li></div></div>
+    <div class="cell"><div class="label">主要贡献</div><div class="value"><li>创意卡牌设计</li><li>核心玩法机制</li><li>游戏平衡</li><li>试玩测试</li></div></div>
+    <div class="cell"><div class="label">团队规模</div><div class="value" style="font-size:2rem;font-weight:800">4 <span style="font-size:.9rem;color:var(--text-dim)">人</span></div></div>
+  </div>
+</div>
+
+<section class="wrap">
+  <span class="eyebrow">Sell Sheet</span>
+  <h2 class="section-title">游戏<span class="grad">介绍页</span></h2>
+  <div class="grid-2 reveal">
+    <img src="https://static.wixstatic.com/media/ac5c19_b952286441274322b7ef9ab63b209d38~mv2.png/v1/fill/w_878,h_1200,al_c,q_85,enc_avif,quality_auto/ac5c19_b952286441274322b7ef9ab63b209d38~mv2.png" alt="Sell Sheet 1" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/ac5c19_8f39202c25164075b455d8c1a99b4a56~mv2.png/v1/fill/w_850,h_1200,al_c,q_90,enc_avif,quality_auto/ac5c19_8f39202c25164075b455d8c1a99b4a56~mv2.png" alt="Sell Sheet 2" style="border:1px solid var(--card-border)">
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Cards Gallery</span>
+  <h2 class="section-title">卡牌<span class="grad">图鉴</span></h2>
+  <div class="card-gallery reveal">
+    <img src="https://static.wixstatic.com/media/ac5c19_01847e75876f433fa3f53783c135804c~mv2.png/v1/fill/w_385,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_01847e75876f433fa3f53783c135804c~mv2.png" alt="猫 Cat" title="Cat">
+    <img src="https://static.wixstatic.com/media/ac5c19_2b66f3c3420647e7bef16e945fdbc79a~mv2.png/v1/fill/w_385,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_2b66f3c3420647e7bef16e945fdbc79a~mv2.png" alt="Ctrl+Z" title="CTRL+Z">
+    <img src="https://static.wixstatic.com/media/ac5c19_09fe1bd41d794fe6a6e0ebda42cd3062~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_09fe1bd41d794fe6a6e0ebda42cd3062~mv2.png" alt="鼠际大盗 Mice's Eleven" title="Mice's Eleven">
+    <img src="https://static.wixstatic.com/media/ac5c19_50c4652bf52243578be38bdcd40206df~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_50c4652bf52243578be38bdcd40206df~mv2.png" alt="替身 Doppelgänger" title="Doppelgänger">
+    <img src="https://static.wixstatic.com/media/ac5c19_82f3662672064259a5e864a1ce81fc9e~mv2.png/v1/fill/w_385,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_82f3662672064259a5e864a1ce81fc9e~mv2.png" alt="世界 The World" title="The World">
+    <img src="https://static.wixstatic.com/media/ac5c19_cb5b7b78e18b4c7d8991ac417caf036c~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_cb5b7b78e18b4c7d8991ac417caf036c~mv2.png" alt="ColoRATto" title="ColoRATto">
+    <img src="https://static.wixstatic.com/media/ac5c19_7b546a7e2acd409cb82549f6511292e1~mv2.png/v1/fill/w_385,h_525,al_c,q_85,enc_avif,quality_auto/ac5c19_7b546a7e2acd409cb82549f6511292e1~mv2.png" alt="逆转命运 Reversed Fate" title="Reversed Fate">
+    <img src="https://static.wixstatic.com/media/ac5c19_f713d5bea9934812bd987c0acae4057f~mv2.png/v1/fill/w_385,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_f713d5bea9934812bd987c0acae4057f~mv2.png" alt="好警察 Good Cop" title="Good Cop">
+    <img src="https://static.wixstatic.com/media/ac5c19_1e8eda52d2e24febb5b384fab46c2fc5~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_1e8eda52d2e24febb5b384fab46c2fc5~mv2.png" alt="坏警察 Bad Cop" title="Bad Cop">
+    <img src="https://static.wixstatic.com/media/ac5c19_bc3efa98b8c04f648dce26fc1db7ea29~mv2.png/v1/fill/w_385,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_bc3efa98b8c04f648dce26fc1db7ea29~mv2.png" alt="掘墓人 Gravedigger" title="Gravedigger">
+    <img src="https://static.wixstatic.com/media/ac5c19_b63cf5e680634bdea7ebba382e0778bc~mv2.png/v1/fill/w_385,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_b63cf5e680634bdea7ebba382e0778bc~mv2.png" alt="独裁者 Dictator" title="Dictator">
+    <img src="https://static.wixstatic.com/media/ac5c19_b4629d53a4a047b3832d1c6650901a6f~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_b4629d53a4a047b3832d1c6650901a6f~mv2.png" alt="2 块奶酪 2 Cheese" title="2 Cheese">
+    <img src="https://static.wixstatic.com/media/ac5c19_afd2305b5b244e5391ec470c1fbd3042~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_afd2305b5b244e5391ec470c1fbd3042~mv2.png" alt="3 块奶酪 3 Cheese" title="3 Cheese">
+    <img src="https://static.wixstatic.com/media/ac5c19_be8e913e27f04fc2bd1d4358610b873e~mv2.png/v1/fill/w_380,h_520,al_c,q_85,enc_avif,quality_auto/ac5c19_be8e913e27f04fc2bd1d4358610b873e~mv2.png" alt="5 块奶酪 5 Cheese" title="5 Cheese">
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Design Decisions</span>
+  <h2 class="section-title">设计<span class="grad">决策</span></h2>
+
+  <div class="card reveal" style="margin-top:26px">
+    <h3>摒弃数字「1」</h3>
+    <p style="color:var(--text-body)">我删掉了「1 块奶酪」卡,因为它让游戏又慢又无聊:如果有人打出「3 块奶酪」,其他人要花好几回合打「1 块奶酪」才能追上,既不公平又令人沮丧。</p>
+    <p style="color:var(--text-body);margin-top:10px">改用「2 块奶酪」和「3 块奶酪」后,节奏更快、更刺激——每一回合都举足轻重,玩家可以专注于聪明的博弈,而不是慢慢消耗彼此的分数。这让游戏对所有人都更有趣、更公平。</p>
+  </div>
+
+  <div class="card reveal" style="margin-top:22px">
+    <h3>如果随机性太多是坏事,那就加更多!</h3>
+    <p style="color:var(--text-body)">我用随机性让游戏轻松欢乐、而非令人烦躁。在《炉石传说》《万智牌》等许多卡牌游戏里,开局手牌差往往意味着不公平的失利。而在我的游戏中,玩家可以从上家手中抽牌——即使起手不佳,之后仍有机会翻盘,这也防止了玩家把强力卡都攥在自己手里。</p>
+    <p style="color:var(--text-body);margin-top:10px">再加上「老鼠卡」的随机效果带来的意外惊喜,整个游戏充满不可预测性。随机时刻足够多时,玩家会对自己的倒霉一笑置之,而不是恼火——每一局都成为愉快的体验。</p>
+  </div>
+
+  <div class="card reveal" style="margin-top:22px">
+    <h3>杜绝「造王者」(Kingmaking)</h3>
+    <p style="color:var(--text-body)">我特意设计了 Mice's Eleven、Dictator、The World 等卡牌来防止「造王」现象,保持游戏公平:</p>
+    <p style="color:var(--text-body);margin-top:10px"><strong>Mice's Eleven</strong> 允许玩家从他人的仓库中偷取一张奶酪卡,不依赖外援也能扭转局势;<strong>Dictator</strong> 让玩家决定下家将抽到哪张牌,以策略与控制取代随机干扰;<strong>The World</strong> 允许与另一名玩家交换整副手牌,为自己创造新开局的同时保持牌局的动态变化。</p>
+    <p style="color:var(--text-body);margin-top:10px">这些卡牌确保落后的玩家依然能影响自己的牌局,而不是不公平地左右他人胜负——让竞争始终聚焦而有趣。</p>
+  </div>
+
+  <div class="card reveal" style="margin-top:22px">
+    <h3>创意命名与角色设计</h3>
+    <p style="color:var(--text-body)">卡牌的名字是这款游戏趣味性的重要来源。就像《模拟山羊 3》以搞笑的方式化用其他游戏与故事的梗一样,我为每张卡挑选了既贴合效果又自带幽默感的名字:</p>
+    <p style="color:var(--text-body);margin-top:10px"><strong>Ctrl+Z</strong>——撤销一步操作,正如键盘快捷键;<strong>ColoRATto</strong>——致敬卡牌游戏《Coloretto》,同时紧扣老鼠主题;<strong>The World</strong>——灵感来自流行文化中的戏剧性名场面,让你与他人交换整副手牌;<strong>Mice's Eleven</strong>——对劫盗电影《十一罗汉》(Ocean's Eleven)的俏皮致敬,完美匹配「偷奶酪」的效果。</p>
+    <p style="color:var(--text-body);margin-top:10px">这些名字让游戏充满创意与玩心,为 Mouse Gang 增添了更多欢乐。</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Prototype &amp; Playtesting</span>
+  <h2 class="section-title">原型与<span class="grad">试玩测试</span></h2>
+  <div class="grid-2 reveal" style="margin-top:26px">
+    <img src="https://static.wixstatic.com/media/ac5c19_fb11993a438b4e5d8c2cae4c4541c613~mv2.png/v1/fill/w_1200,h_900,al_c,q_85,enc_avif,quality_auto/ac5c19_fb11993a438b4e5d8c2cae4c4541c613~mv2.png" alt="试玩测试照片" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/7452b0_cdd8762c4af44af2ba000a11da03061f~mv2.png/v1/fill/w_1200,h_836,al_c,q_85,enc_avif,quality_auto/7452b0_cdd8762c4af44af2ba000a11da03061f~mv2.png" alt="桌面试玩" style="border:1px solid var(--card-border)">
+  </div>
+  <div class="grid-3 reveal" style="margin-top:18px">
+    <img src="https://static.wixstatic.com/media/ac5c19_b80cb92d2e2b4a06ad5b26f375cb7898~mv2.png/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/ac5c19_b80cb92d2e2b4a06ad5b26f375cb7898~mv2.png" alt="原型卡牌 1" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/ac5c19_c6c5e4724592493987934fb0a9e259e1~mv2.png/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/ac5c19_c6c5e4724592493987934fb0a9e259e1~mv2.png" alt="原型卡牌 2" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/ac5c19_6b26f9ae8e6b470fb97a5f304e95831c~mv2.png/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/ac5c19_6b26f9ae8e6b470fb97a5f304e95831c~mv2.png" alt="原型卡牌 3" style="border:1px solid var(--card-border)">
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Card Making</span>
+  <h2 class="section-title">卡牌<span class="grad">制作</span></h2>
+  <div class="grid-3 reveal" style="margin-top:26px">
+    <img src="https://static.wixstatic.com/media/ac5c19_6933343846f74d6bbf4e7c7f78ee9ccf~mv2.png/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/ac5c19_6933343846f74d6bbf4e7c7f78ee9ccf~mv2.png" alt="卡牌制作 1" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/ac5c19_6301f446d6c34ac58908664a98b8be24~mv2.png/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/ac5c19_6301f446d6c34ac58908664a98b8be24~mv2.png" alt="卡牌制作 2" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/ac5c19_652cb0f73fa74424a22fdd5d112b408d~mv2.png/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/ac5c19_652cb0f73fa74424a22fdd5d112b408d~mv2.png" alt="卡牌制作 3" style="border:1px solid var(--card-border)">
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Outcomes</span>
+  <h2 class="section-title">最终<span class="grad">成果</span></h2>
+  <div class="two-col reveal" style="margin-top:26px">
+    <img src="https://static.wixstatic.com/media/ac5c19_2a2fa32b6a9244018bbf2fb75991cf40~mv2.png/v1/fill/w_682,h_874,al_c,q_85,enc_avif,quality_auto/ac5c19_2a2fa32b6a9244018bbf2fb75991cf40~mv2.png" alt="成品展示" style="border:1px solid var(--card-border);max-width:420px;justify-self:center">
+    <div class="prose">
+      <p>一场快节奏的社交扑克脸对决:3–5 名玩家,每局 10–20 分钟!</p>
+      <p>配套一页双面规则书,开盒即玩。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <h2>联系<span class="grad-text">与合作</span></h2>
+    <p>如有游戏设计相关的合作或交流意向,欢迎通过邮件联系。</p>
+    <div class="footer-cta">
+      <a class="btn btn-primary" href="mailto:arthurta@andrew.cmu.edu">联系我</a>
+      <a class="btn btn-ghost" href="https://www.arthurtang.online/_files/ugd/ac5c19_97dff723fe3e4dc8b64bd0f16d40d59c.pdf" target="_blank">下载简历</a>
+    </div>
+    <p class="copyright">© 2026 Arthur Tang · 汉化复刻版</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

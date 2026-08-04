@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drag And Mix | Arthur Tang · 游戏设计师</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">Tang</a>
+    <div class="nav-links">
+      <a href="index.html">首页</a>
+      <a href="about.html">关于我</a>
+      <div class="dropdown">
+        <button>游戏作品 ▾</button>
+        <div class="dropdown-menu">
+          <a href="drag-and-mix.html">Drag And Mix <span>· 解谜合成</span></a>
+          <a href="edge-digger.html">Edge Digger <span>· 平台动作</span></a>
+          <a href="mouse-gang.html">Mouse Gang <span>· 卡牌桌游</span></a>
+          <a href="time-casino.html">Time Casino <span>· 肉鸽迷宫</span></a>
+          <a href="pip-follicles.html">Pip Follicles <span>· 街机理发</span></a>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-ghost" href="https://www.arthurtang.online/_files/ugd/ac5c19_97dff723fe3e4dc8b64bd0f16d40d59c.pdf" target="_blank">简历</a>
+  </div>
+</nav>
+
+<div class="wrap page-hero">
+  <span class="eyebrow">解谜 · 合成 · 人类演化</span>
+  <h1 class="display"><span class="grad">Drag And Mix</span></h1>
+  <p class="lead" style="margin:18px auto 0">拖拽、合成、顿悟——在解谜中重走人类文明早期的演化之路。</p>
+  <div class="hero-cta" style="justify-content:center">
+    <a class="btn btn-primary" href="https://saikiosamu.itch.io/drag-and-mix" target="_blank">在 itch.io 上试玩</a>
+  </div>
+  <p style="color:var(--text-dim);font-size:.85rem;margin-top:12px">支持 Windows(下载版)</p>
+  <div class="cover">
+    <img src="https://static.wixstatic.com/media/ac5c19_ff509535207144d78453132b9d25af70~mv2.jpg/v1/fill/w_1400,h_784,al_c,q_85,enc_avif,quality_auto/Portfolio_DAM_JQ_pdf-%E9%8D%A5%E5%89%A7%E5%A2%96-0.jpg" alt="Drag And Mix 主视觉">
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="meta-panel reveal">
+    <div class="cell"><div class="label">游戏形式</div><div class="value">电子游戏</div></div>
+    <div class="cell"><div class="label">担任角色</div><div class="value"><li>制作人</li><li>游戏设计师</li><li>程序</li><li>项目管理</li></div></div>
+    <div class="cell"><div class="label">主要贡献</div><div class="value"><li>玩法设计</li><li>原型制作</li><li>核心玩法机制</li><li>组队与协调</li><li>资源整合 / 调试</li></div></div>
+    <div class="cell"><div class="label">团队规模</div><div class="value" style="font-size:2rem;font-weight:800" >3 <span style="font-size:.9rem;color:var(--text-dim)">人</span></div></div>
+  </div>
+</div>
+
+<section class="wrap">
+  <span class="eyebrow">Puzzle Design</span>
+  <h2 class="section-title">谜题设计:定义<span class="grad">「顿悟时刻」</span></h2>
+  <div class="prose reveal">
+    <p>顿悟时刻(Eureka Moment)能带来强烈的积极情绪:高多巴胺水平促进记忆形成,同时缓冲去甲肾上腺素,降低压力、提升坚持度(参考:Elyot Grant《30 Puzzle Design Lessons》,GDC 讲座)。</p>
+    <p>我认为顿悟时刻是解谜游戏的灵魂。正因其重要性,设计师才要专门为这些瞬间的迸发去搭建关卡与谜题。</p>
+  </div>
+  <h3 style="margin-top:36px">玩家最喜爱的三个顿悟时刻</h3>
+  <p style="color:var(--text-dim);max-width:820px">根据试玩问卷,玩家印象最深的三个顿悟时刻:</p>
+  <div class="gif-grid reveal">
+    <figure>
+      <img src="https://static.wixstatic.com/media/ac5c19_b32dad76d4964cd8b4007b0bef2760c4~mv2.gif" alt="熔炉炼人诞生宗教">
+      <figcaption>将人放入熔炉——诞生了宗教!</figcaption>
+    </figure>
+    <figure>
+      <img src="https://static.wixstatic.com/media/ac5c19_9cb490c6fb91402291a85ac661339901~mv2.gif" alt="木炭入水得墨水">
+      <figcaption>把木炭放进水里——得到墨水!</figcaption>
+    </figure>
+    <figure>
+      <img src="https://static.wixstatic.com/media/ac5c19_75bbbd2527884a80b5e36ae56b60d581~mv2.gif" alt="奇石炼铁">
+      <figcaption>集齐所有前置条件,获得可炼成铁矿的奇石</figcaption>
+    </figure>
+  </div>
+  <div class="quote">要打造一个成功的顿悟时刻,需要在关卡设计中精心铺垫,并辅以视觉与听觉反馈,让这一瞬间显得特别而独一无二。</div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Prototyping</span>
+  <h2 class="section-title">原型<span class="grad">迭代</span></h2>
+  <p class="lead" style="margin-bottom:34px">原型阶段由我独立完成游戏循环与基础机制,通过多个版本不断迭代,找到最适合这款游戏的形态。</p>
+  <div class="grid-2 reveal">
+    <div class="card">
+      <h3>① 纸面原型</h3>
+      <p style="color:var(--text-dim);font-size:.94rem">用纸面原型完成了简单游戏循环与基础机制的设计,也让我能和家人朋友一起试玩验证。</p>
+      <img style="margin-top:14px" src="https://static.wixstatic.com/media/ac5c19_5fdf626864aa48ec8729b62e8d0e0197~mv2.gif" alt="纸面原型">
+    </div>
+    <div class="card">
+      <h3>② 数字工具原型(Figma)</h3>
+      <p style="color:var(--text-dim);font-size:.94rem">Figma 原型让身处地球另一端的玩家也能参与试玩。</p>
+      <img style="margin-top:14px" src="https://static.wixstatic.com/media/ac5c19_a8b4b3f3e1d7446ba7459b96261b8824~mv2.gif" alt="Figma 原型">
+    </div>
+    <div class="card">
+      <h3>③ 引擎原型(Unity)</h3>
+      <p style="color:var(--text-dim);font-size:.94rem">Unity 原型是交付给两位美术之前的最后版本,用于关卡设计与玩法系统的最终试玩验证。</p>
+      <img style="margin-top:14px" src="https://static.wixstatic.com/media/ac5c19_239837295e464639841a41838fef445b~mv2.gif" alt="Unity 原型">
+    </div>
+    <div class="card">
+      <h3>④ 最终版本</h3>
+      <p style="color:var(--text-dim);font-size:.94rem">整合美术资源后的正式版本,完成完整的游戏体验闭环。</p>
+      <img style="margin-top:14px" src="https://static.wixstatic.com/media/ac5c19_bc29866979554e5f8587369492ea2b29~mv2.gif" alt="最终版本">
+    </div>
+  </div>
+  <div class="prose reveal" style="margin-top:36px">
+    <h3>早期中文原型 Demo</h3>
+    <p>这个中文版原型完全由我个人完成:历时两个月,包括素材制作、关卡搭建,以及最核心的游戏机制(C# 脚本 + Unity Visual Scripting)。这一版本在亲友间试玩后,帮助团队确定了最适合的美术风格,也收获了大量建设性反馈——包括不少彩蛋建议。</p>
+  </div>
+  <div class="grid-2 reveal" style="margin-top:20px">
+    <img src="https://static.wixstatic.com/media/ac5c19_9a9d21d5f6a54819908b625f27efcb3c~mv2.gif" alt="早期中文原型演示 1" style="border:1px solid var(--card-border)">
+    <img src="https://static.wixstatic.com/media/ac5c19_2ade3f860a584e7bba67f3929caf8029~mv2.gif" alt="早期中文原型演示 2" style="border:1px solid var(--card-border)">
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">UX Design</span>
+  <h2 class="section-title">为用户体验而<span class="grad">设计</span></h2>
+  <div class="two-col reveal" style="margin-top:26px">
+    <div class="prose">
+      <h3>失败尝试反馈</h3>
+      <p>当玩家随意组合物品时,游戏会输出失败反馈,提醒玩家重新思考、再次尝试。屏幕下方还有一个计数器,记录本局中玩家的每一次尝试——无论成功与否。</p>
+    </div>
+    <img src="https://static.wixstatic.com/media/ac5c19_ca7ebc43555d4e2ca134a325171bbc66~mv2.gif" alt="失败尝试反馈" style="border:1px solid var(--card-border)">
+  </div>
+  <div class="two-col reveal" style="margin-top:40px">
+    <img src="https://static.wixstatic.com/media/ac5c19_66934e8a347f40b78cca27d9d5ee5f02~mv2.gif" alt="物品检视提示" style="border:1px solid var(--card-border)">
+    <div class="prose">
+      <h3>玩家讨厌阅读</h3>
+      <p>大多数玩家不喜欢读文字,更喜欢直接上手。因此在我的游戏里,阅读是可选项而非必修课。</p>
+      <p>阅读是游戏中的「安全网」——愿意花时间阅读的玩家,可以通过检视物品了解其名称与相关信息,从中收集提示,推理出正确的合成组合。此外,检视物品还能发现游戏中的隐藏要素:每件物品都有自己独特的背景故事。</p>
+    </div>
+  </div>
+  <div class="reveal" style="margin-top:40px">
+    <h3>UI 界面呈现</h3>
+    <p style="color:var(--text-dim);max-width:820px">UI 的美术风格向「贴在冰箱上的物件」靠拢,比如便利贴。我们准备了提示页,以防玩家跳过开场动画;还有设置页,可以选关或调节音量。此外,我们制作了一份报纸风格的规则手册作为新手引导。</p>
+    <div class="gif-grid" style="margin-top:20px">
+      <img src="https://static.wixstatic.com/media/ac5c19_7d3830ca500f417da227e8ab1a9830fc~mv2.png/v1/fill/w_870,h_466,al_c,q_85,enc_avif,quality_auto/ac5c19_7d3830ca500f417da227e8ab1a9830fc~mv2.png" alt="提示页界面">
+      <img src="https://static.wixstatic.com/media/ac5c19_28a4287391944687b9abbbbdeb414b2b~mv2.png/v1/fill/w_870,h_438,al_c,q_85,enc_avif,quality_auto/ac5c19_28a4287391944687b9abbbbdeb414b2b~mv2.png" alt="设置页界面">
+      <img src="https://static.wixstatic.com/media/ac5c19_5092a819eae04e7d93f11954f5ab52a5~mv2.png/v1/fill/w_990,h_558,al_c,q_85,enc_avif,quality_auto/ac5c19_5092a819eae04e7d93f11954f5ab52a5~mv2.png" alt="报纸风格规则手册">
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Secrets &amp; Surprise</span>
+  <h2 class="section-title">埋藏秘密与<span class="grad">惊喜</span></h2>
+  <div class="prose reveal">
+    <p>惊喜是「火花」的重要来源。彩蛋能鼓励玩家不断尝试,因为它们可能与创作者产生共鸣。我倾听玩家反馈,为测试小组定制彩蛋——灵感来自日常常识或艺术作品,比如打水漂、抓鱼、斯巴达勇士——目标是构建一个高度可交互的虚拟世界。</p>
+  </div>
+  <div class="gif-grid reveal">
+    <img src="https://static.wixstatic.com/media/ac5c19_8c5c1a8b5ac241a18baab7fa87b9240b~mv2.gif" alt="彩蛋演示 1">
+    <img src="https://static.wixstatic.com/media/ac5c19_399d50846a3949d498d70d12e98607fc~mv2.gif" alt="彩蛋演示 2">
+    <img src="https://static.wixstatic.com/media/ac5c19_4d45d658a93e4e27b734d70415dd7afa~mv2.gif" alt="彩蛋演示 3">
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Player Autonomy</span>
+  <h2 class="section-title">玩家<span class="grad">自主性</span></h2>
+  <div class="two-col reveal" style="margin-top:26px">
+    <div class="prose">
+      <h3>自由探索</h3>
+      <p>玩家可以自由拖拽物品,从任意选项切入。开局即提供大量并行选择,每一种都能在一定程度上推进游戏。我们尽量弱化失败反馈与惩罚,鼓励玩家持续尝试。</p>
+    </div>
+    <img src="https://static.wixstatic.com/media/ac5c19_6af7186f3e2b474c93dc91eee1cd02ee~mv2.gif" alt="自由探索演示" style="border:1px solid var(--card-border)">
+  </div>
+  <div class="two-col reveal" style="margin-top:40px">
+    <img src="https://static.wixstatic.com/media/ac5c19_9ba8b238654447bda570dbdc8b605d42~mv2.gif" alt="剪羊毛彩蛋演示" style="border:1px solid var(--card-border)">
+    <div class="prose">
+      <h3>向《旷野之息》学习</h3>
+      <p>《塞尔达传说:旷野之息》是「最大化玩家探索自由」的绝佳范例——玩家能想到的操作,游戏几乎都能回应。我在自己的游戏中也尽力做到这一点:回应玩家的想象力。看到一只羊和一把剪刀?把它们放在一起,你会得到一只光溜溜的羊。</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Accessibility</span>
+  <h2 class="section-title">反馈<span class="grad">可达性</span>:假设玩家「听不见」</h2>
+  <div class="prose reveal">
+    <p>音乐与音效是游戏的重要组成部分。但在设计时,开发者应当优先保证视觉反馈、再叠加听觉反馈——设身处地为玩家着想。最终两者结合,才能创造更沉浸的体验。</p>
+  </div>
+  <div class="gif-grid reveal">
+    <figure>
+      <img src="https://static.wixstatic.com/media/ac5c19_ca7ebc43555d4e2ca134a325171bbc66~mv2.gif" alt="失败尝试反馈">
+      <figcaption>失败尝试反馈</figcaption>
+    </figure>
+    <figure>
+      <img src="https://static.wixstatic.com/media/ac5c19_75bbbd2527884a80b5e36ae56b60d581~mv2.gif" alt="顿悟时刻反馈">
+      <figcaption>顿悟时刻反馈</figcaption>
+    </figure>
+    <figure>
+      <img src="https://static.wixstatic.com/media/ac5c19_399d50846a3949d498d70d12e98607fc~mv2.gif" alt="彩蛋反馈">
+      <figcaption>彩蛋反馈</figcaption>
+    </figure>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="wrap">
+  <span class="eyebrow">Art &amp; Management &amp; Code</span>
+  <h2 class="section-title">美术制作 · 项目管理 · <span class="grad">核心代码</span></h2>
+  <div class="figure reveal">
+    <img src="https://static.wixstatic.com/media/ac5c19_46f9496f63ca40afa2629f8bc5456155~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Portfolio_DAM_JQ-06.png" alt="美术资源制作">
+    <figcaption>美术资源制作流程</figcaption>
+  </div>
+  <div class="grid-2 reveal">
+    <figure class="figure" style="margin-top:0">
+      <img src="https://static.wixstatic.com/media/ac5c19_d84f434700b443a7b7f0968c15e72d3e~mv2.jpg/v1/fill/w_1414,h_793,al_c,q_85,enc_avif,quality_auto/Portfolio_DAM_JQ_pdf-%E9%8D%A5%E5%89%A7%E5%A2%96-2.jpg" alt="项目管理文档 1">
+      <figcaption>项目管理</figcaption>
+    </figure>
+    <figure class="figure" style="margin-top:0">
+      <img src="https://static.wixstatic.com/media/ac5c19_332c5c53b0c4475aa0180927a79d81fb~mv2.jpg/v1/fill/w_1414,h_793,al_c,q_85,enc_avif,quality_auto/Portfolio_DAM_JQ_pdf-%E9%8D%A5%E5%89%A7%E5%A2%96-3.jpg" alt="项目管理文档 2">
+      <figcaption>排期与协作</figcaption>
+    </figure>
+  </div>
+  <div class="figure reveal">
+    <img src="https://static.wixstatic.com/media/ac5c19_f3f80721f0dd48a39ad382d49d0ce72b~mv2.jpg/v1/fill/w_1414,h_793,al_c,q_85,enc_avif,quality_auto/Portfolio_DAM_JQ_pdf-%E9%8D%A5%E5%89%A7%E5%A2%96-6.jpg" alt="核心交互代码">
+    <figcaption>核心交互代码</figcaption>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <h2>联系<span class="grad-text">与合作</span></h2>
+    <p>如有游戏设计相关的合作或交流意向,欢迎通过邮件联系。</p>
+    <div class="footer-cta">
+      <a class="btn btn-primary" href="mailto:arthurta@andrew.cmu.edu">联系我</a>
+      <a class="btn btn-ghost" href="https://www.arthurtang.online/_files/ugd/ac5c19_97dff723fe3e4dc8b64bd0f16d40d59c.pdf" target="_blank">下载简历</a>
+    </div>
+    <p class="copyright">© 2026 Arthur Tang · 汉化复刻版</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
