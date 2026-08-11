@@ -5,155 +5,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pip Follicles | Arthur Tang · 游戏设计师</title>
 <link rel="stylesheet" href="style.css">
-<style>
-.stats-table{width:100%;border-collapse:collapse;margin-top:22px;font-size:.94rem}
-.stats-table th,.stats-table td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--line)}
-.stats-table th{color:var(--cyan);font-size:.78rem;letter-spacing:.2em;text-transform:uppercase}
-.stats-table td:nth-child(2){font-weight:700}
-.stats-table tr.hl td{background:rgba(192,57,47,.06)}
-.stats-table tr.hl td:nth-child(2){color:var(--cyan)}
-.bar-wrap{background:rgba(0,0,0,.08);border-radius:99px;height:8px;min-width:120px}
-.bar{height:8px;border-radius:99px;background:var(--grad)}
-.team-list li{list-style:none;padding:8px 0;border-bottom:1px solid var(--line);color:var(--text-body)}
-.team-list li strong{color:var(--text)}
-.slides-appendix{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-@media(max-width:620px){.slides-appendix{grid-template-columns:1fr}}
-.slides-appendix img{border:1px solid var(--card-border);opacity:.85;transition:.2s}
-.slides-appendix img:hover{opacity:1}
-</style>
 </head>
 <body>
-
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="logo" href="index.html">Tang</a>
-    <div class="nav-links">
-      <a href="index.html">首页</a>
-      <a href="about.html">关于我</a>
-      <div class="dropdown">
-        <button>游戏作品 ▾</button>
-        <div class="dropdown-menu">
-          <a href="drag-and-mix.html">Drag And Mix <span>· 解谜合成</span></a>
-          <a href="edge-digger.html">Edge Digger <span>· 平台动作</span></a>
-          <a href="mouse-gang.html">Mouse Gang <span>· 卡牌桌游</span></a>
-          <a href="time-casino.html">Time Casino <span>· 肉鸽迷宫</span></a>
-          <a href="pip-follicles.html">Pip Follicles <span>· 街机理发</span></a>
-        </div>
-      </div>
-    </div>
-    <a class="btn btn-ghost" href="resume.pdf" target="_blank">简历</a>
+<nav class="nav"><div class="nav-inner">
+  <a class="logo" href="index.html">唐</a>
+  <span class="nav-tag">Arthur Tang / Game Designer</span>
+  <span class="nav-spacer"></span>
+  <div class="nav-links"><a href="index.html" class="active">Works</a><a href="about.html">About</a><a href="resume.pdf" target="_blank">Résumé</a></div>
+</div></nav>
+<header class="wrap" style="padding-top:112px">
+  <div class="rule"><span>03</span><span>街机 · 休闲 · Ludum Dare</span><span class="fill"></span><span class="muted">Windows · 3 人团队</span></div>
+  <h1 class="proj-title">Pip Follicles</h1>
+  <div class="hero" style="border-bottom:none;padding-bottom:0">
+    <p class="lead">一款欢乐搞怪的街机游戏，玩家为顾客定制专属发型。</p>
+    <div class="btns" style="justify-content:flex-end"><a class="btn btn-solid" href="https://saikiosamu.itch.io/pip-follicles" target="_blank">在 itch.io 上试玩</a></div>
   </div>
-</nav>
-
-<div class="wrap page-hero">
-  <span class="eyebrow">街机 · 休闲 · Ludum Dare 参赛作品</span>
-  <h1 class="display"><span class="grad">Pip Follicles</span></h1>
-  <p class="lead" style="margin:18px auto 0">一款欢乐搞怪的街机游戏,玩家为顾客定制专属发型。</p>
-  <div class="hero-cta" style="justify-content:center">
-    <a class="btn btn-primary" href="https://saikiosamu.itch.io/pip-follicles" target="_blank">在 itch.io 上试玩</a>
-  </div>
-  <p style="color:var(--text-dim);font-size:.85rem;margin-top:12px">支持 Windows(下载版)</p>
-  <div class="cover">
-    <img src="https://static.wixstatic.com/media/ac5c19_390cdd673a3945329ee6f2afadf60d78~mv2.png/v1/fill/w_1400,h_787,al_c,q_90,enc_avif,quality_auto/%E5%9B%BE%E5%83%8F_2024-11-22_044845696.png" alt="Pip Follicles 主视觉">
-  </div>
-</div>
+  <img src="https://static.wixstatic.com/media/ac5c19_390cdd673a3945329ee6f2afadf60d78~mv2.png/v1/fill/w_1400,h_787,al_c,q_90,enc_avif,quality_auto/%E5%9B%BE%E5%83%8F_2024-11-22_044845696.png" alt="Pip Follicles 主视觉" style="margin-top:48px;border:1px solid var(--line)">
+</header>
 
 <div class="wrap">
-  <div class="meta-panel reveal">
-    <div class="cell"><div class="label">游戏形式</div><div class="value">电子游戏</div></div>
-    <div class="cell"><div class="label">担任角色</div><div class="value"><li>游戏设计师</li><li>Unity 开发者</li><li>程序</li></div></div>
-    <div class="cell"><div class="label">主要贡献</div><div class="value"><li>玩法设计</li><li>核心玩法机制</li><li>Unity 开发</li><li>调试</li></div></div>
-    <div class="cell"><div class="label">团队规模</div><div class="value" style="font-size:2rem;font-weight:800">3 <span style="font-size:.9rem;color:var(--text-dim)">人</span></div></div>
+  <div class="meta-panel">
+    <div class="cell"><div class="lbl">游戏形式</div><div class="big">电子游戏</div></div>
+    <div class="cell"><div class="lbl">担任角色</div><ul><li>游戏设计师</li><li>Unity 开发者</li><li>程序</li></ul></div>
+    <div class="cell"><div class="lbl">主要贡献</div><ul><li>玩法设计</li><li>核心玩法机制</li><li>Unity 开发</li><li>调试</li></ul></div>
+    <div class="cell"><div class="lbl">团队规模</div><div class="team">3 <span>人</span></div></div>
   </div>
 </div>
 
-<section class="wrap">
-  <span class="eyebrow">Mechanics</span>
-  <h2 class="section-title">核心<span class="grad">机制</span></h2>
-  <div class="grid-2 reveal" style="margin-top:26px">
-    <div class="card">
-      <h3>吹出目标发型</h3>
-      <p style="color:var(--text-body)">玩家扮演一位小号手,用 WASD 和鼠标控制,在限定时间内把头皮上的毛囊吹到理想位置,拼出需要达成的目标发型。</p>
-    </div>
-    <div class="card">
-      <h3>拍照定格与长度微调</h3>
-      <p style="color:var(--text-body)">限定时间结束后,玩家会得到一张角色发型的照片,并且还可以继续调整头发的长度,完成最终造型。</p>
-    </div>
-  </div>
+<section class="wrap block reveal"><div class="sec"><div class="rail"><div class="lbl">02 / Mechanics</div><h2>核心机制</h2></div><div><div class="cards"><div class="card"><h3>吹出目标发型</h3><p>玩家扮演一位小号手，用 WASD 和鼠标控制，在限定时间内把头皮上的毛囊吹到理想位置，拼出需要达成的目标发型。</p></div><div class="card"><h3>拍照定格与长度微调</h3><p>限定时间结束后，玩家会得到一张角色发型的照片，并且还可以继续调整头发的长度，完成最终造型。</p></div></div></div></div></section>
+<section class="wrap block reveal"><div class="sec"><div class="rail"><div class="lbl">03 / Ludum Dare</div><h2>Game Jam 参赛经历</h2><p class="note">来自 33–34 位评委玩家的打分，创新与幽默两项排名最高</p></div><div><div class="prose"><p>本届 Ludum Dare 的主题是「微小生物（Tiny Creature）」。基于这个主题，团队构思出一套独特的玩法：玩家扮演一位在人类头皮上奔跑的小号手。头皮上住着许多小小的毛囊，玩家用小号轻轻一吹就能把它们吹走，人类的发型也随之改变。游戏结尾，玩家还可以调整毛囊的长度。我们希望玩家能在这款轻松搞笑的小游戏中获得片刻的放松和快乐。</p></div><div class="rows"><div class="r head"><span>评分项</span><span>名次</span><span>平均分</span><span></span></div><div class="r hl"><span>幽默 Humor</span><span class="rank">#219</span><span class="score">3.629</span><span class="bar"><span style="width:73%"></span></span></div><div class="r hl"><span>创新 Innovation</span><span class="rank">#222</span><span class="score">3.703</span><span class="bar"><span style="width:74%"></span></span></div><div class="r"><span>主题契合 Theme</span><span class="rank">#778</span><span class="score">3.359</span><span class="bar"><span style="width:67%"></span></span></div><div class="r"><span>综合 Overall</span><span class="rank">#780</span><span class="score">3.313</span><span class="bar"><span style="width:66%"></span></span></div><div class="r"><span>音效 Audio</span><span class="rank">#491</span><span class="score">3.219</span><span class="bar"><span style="width:64%"></span></span></div><div class="r"><span>画面 Graphics</span><span class="rank">#794</span><span class="score">3.188</span><span class="bar"><span style="width:64%"></span></span></div><div class="r"><span>氛围 Mood</span><span class="rank">#851</span><span class="score">3.129</span><span class="bar"><span style="width:63%"></span></span></div><div class="r"><span>乐趣 Fun</span><span class="rank">#832</span><span class="score">3.032</span><span class="bar"><span style="width:61%"></span></span></div></div></div></div></section>
+<section class="wrap block reveal"><div class="sec"><div class="rail"><div class="lbl">04 / Feedback & Team</div><h2>玩家反馈与团队分工</h2></div><div><div class="cards"><div class="card"><h3>玩家反馈</h3><p>游戏在 Ludum Dare 评论区收到了大量玩家留言，不少玩家称赞了它有趣的创意概念和对主题别出心裁的诠释，也有玩家表示音效和整体氛围让人会心一笑。</p></div><div class="card"><h3>团队分工</h3><p>ARTHURT（本人）— 程序</p><p>XIAOXI33 — 游戏设计 / 2D 美术 · PP — 3D 美术</p></div></div></div></div></section>
+<section class="wrap block reveal"><div class="sec"><div class="rail"><div class="lbl">05 / Original Slides</div><h2>原版设计图</h2><p class="note">英文</p></div><div><div class="gal gal-2 a169"><figure><img src="https://static.wixstatic.com/media/ac5c19_9b0b1bc631aa405c924e6be5cccc18de~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%203%20(3).png" alt="原版设计图 1"></figure><figure><img src="https://static.wixstatic.com/media/ac5c19_8b045524a7c04ccc8f4a852a910f4f97~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%202%20(1).png" alt="原版设计图 2"></figure><figure><img src="https://static.wixstatic.com/media/ac5c19_c44f4284b8f94b21b8cf7e9ca53449fb~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%204%20(3).png" alt="原版设计图 3"></figure><figure><img src="https://static.wixstatic.com/media/ac5c19_9bb17034eb6540b496e69a151c1189d3~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%205%20(1).png" alt="原版设计图 4"></figure></div></div></div></section>
+
+
+
+<section class="wrap block">
+  <div class="rule" style="margin-bottom:20px"><span>其他项目</span><span class="fill"></span></div>
+  <div class="idx"><a href="drag-and-mix.html"><span class="n">01</span><span><span class="t">Drag And Mix</span></span><span class="tag">解谜 · 合成</span></a><a href="time-casino.html"><span class="n">02</span><span><span class="t">Time Casino</span></span><span class="tag">第一人称 · Roguelike</span></a><a href="mouse-gang.html"><span class="n">04</span><span><span class="t">Mouse Gang</span></span><span class="tag">卡牌 · 桌游</span></a><a href="edge-digger.html"><span class="n">05</span><span><span class="t">Edge Digger</span></span><span class="tag">动作 · Game Jam</span></a></div>
 </section>
-
-<hr class="divider">
-
-<section class="wrap">
-  <span class="eyebrow">Ludum Dare</span>
-  <h2 class="section-title">Game Jam <span class="grad">参赛经历</span></h2>
-  <div class="prose reveal" style="margin-top:20px">
-    <p>本届 Ludum Dare 的主题是「微小生物(Tiny Creature)」。基于这个主题,团队构思出一套独特的玩法:玩家扮演一位在人类头皮上奔跑的小号手。头皮上住着许多小小的毛囊,玩家用小号轻轻一吹就能把它们吹走,人类的发型也随之改变。游戏结尾,玩家还可以调整毛囊的长度。我们希望玩家能在这款轻松搞笑的小游戏中获得片刻的放松和快乐。</p>
+<footer class="wrap"><div class="foot">
+  <div>
+    <h2>如有合作或交流意向，<br>欢迎<span class="hl">邮件联系</span>。</h2>
+    <a class="mail" href="mailto:arthurta@andrew.cmu.edu">arthurta@andrew.cmu.edu</a>
   </div>
-
-  <h3 style="margin-top:36px">评分成绩</h3>
-  <p style="color:var(--text-dim)">来自 33–34 位评委玩家的打分,其中创新与幽默两项排名最高:</p>
-  <table class="stats-table reveal">
-    <tr><th>评分项</th><th>名次</th><th>平均分(满分 5)</th><th></th></tr>
-    <tr class="hl"><td>幽默 Humor</td><td>#219</td><td>3.629</td><td><div class="bar-wrap"><div class="bar" style="width:73%"></div></div></td></tr>
-    <tr class="hl"><td>创新 Innovation</td><td>#222</td><td>3.703</td><td><div class="bar-wrap"><div class="bar" style="width:74%"></div></div></td></tr>
-    <tr><td>主题契合 Theme</td><td>#778</td><td>3.359</td><td><div class="bar-wrap"><div class="bar" style="width:67%"></div></div></td></tr>
-    <tr><td>综合 Overall</td><td>#780</td><td>3.313</td><td><div class="bar-wrap"><div class="bar" style="width:66%"></div></div></td></tr>
-    <tr><td>音效 Audio</td><td>#491</td><td>3.219</td><td><div class="bar-wrap"><div class="bar" style="width:64%"></div></div></td></tr>
-    <tr><td>画面 Graphics</td><td>#794</td><td>3.188</td><td><div class="bar-wrap"><div class="bar" style="width:64%"></div></div></td></tr>
-    <tr><td>氛围 Mood</td><td>#851</td><td>3.129</td><td><div class="bar-wrap"><div class="bar" style="width:63%"></div></div></td></tr>
-    <tr><td>乐趣 Fun</td><td>#832</td><td>3.032</td><td><div class="bar-wrap"><div class="bar" style="width:61%"></div></div></td></tr>
-  </table>
-</section>
-
-<hr class="divider">
-
-<section class="wrap">
-  <div class="grid-2 reveal">
-    <div>
-      <span class="eyebrow">Feedback</span>
-      <h2 class="section-title">玩家<span class="grad">反馈</span></h2>
-      <p style="color:var(--text-body);max-width:520px">游戏在 Ludum Dare 评论区收到了大量玩家留言,不少玩家称赞了它有趣的创意概念和对主题别出心裁的诠释,也有玩家表示音效和整体氛围让人会心一笑。</p>
-    </div>
-    <div>
-      <span class="eyebrow">Team</span>
-      <h2 class="section-title">团队<span class="grad">分工</span></h2>
-      <ul class="team-list">
-        <li><strong>ARTHURT</strong>(本人)— 程序</li>
-        <li><strong>XIAOXI33</strong> — 游戏设计 / 2D 美术</li>
-        <li><strong>PP</strong> — 3D 美术</li>
-      </ul>
-    </div>
+  <div class="social">
+    <a href="https://www.linkedin.com/in/arthur-tang-407880352" target="_blank">LinkedIn ↗</a>
+    <a href="https://www.youtube.com/@mashiro_ow2016" target="_blank">YouTube ↗</a>
+    <a href="https://x.com/Mashiro_ow2" target="_blank">X ↗</a>
+    <a href="https://liquipedia.net/overwatch/Mashiro" target="_blank">Liquipedia ↗</a>
+    <span class="copy">© 2026 Arthur Tang</span>
   </div>
-</section>
-
-<hr class="divider">
-
-<section class="wrap">
-  <span class="eyebrow">Original Slides</span>
-  <h2 class="section-title">原版设计图<span style="color:var(--text-dim);font-size:1rem;font-weight:400">(英文)</span></h2>
-  <div class="slides-appendix reveal" style="margin-top:24px">
-    <img src="https://static.wixstatic.com/media/ac5c19_9b0b1bc631aa405c924e6be5cccc18de~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%203%20(3).png" alt="原版设计图 1">
-    <img src="https://static.wixstatic.com/media/ac5c19_8b045524a7c04ccc8f4a852a910f4f97~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%202%20(1).png" alt="原版设计图 2">
-    <img src="https://static.wixstatic.com/media/ac5c19_c44f4284b8f94b21b8cf7e9ca53449fb~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%204%20(3).png" alt="原版设计图 3">
-    <img src="https://static.wixstatic.com/media/ac5c19_9bb17034eb6540b496e69a151c1189d3~mv2.png/v1/fill/w_1414,h_793,al_c,q_90,enc_avif,quality_auto/Slide%2016_9%20-%205%20(1).png" alt="原版设计图 4">
-  </div>
-</section>
-
-<footer>
-  <div class="footer-inner">
-    <h2>联系<span class="grad-text">与合作</span></h2>
-    <p>如有游戏设计相关的合作或交流意向,欢迎通过邮件联系。</p>
-    <div class="footer-cta">
-      <a class="btn btn-primary" href="mailto:arthurta@andrew.cmu.edu">联系我</a>
-      <a class="btn btn-ghost" href="resume.pdf" target="_blank">下载简历</a>
-    </div>
-    <p class="copyright">© 2026 Arthur Tang</p>
-  </div>
-</footer>
-
+</div></footer>
 <script>
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.08});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.06});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
